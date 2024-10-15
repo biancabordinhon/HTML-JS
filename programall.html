@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="Utf-8">
+    <meta http-equiv="X-UA-Compatible" content="width=decive-width,initial-scale=1.0">
+    <meta name="viewport" content="width=decive-width,initial-scale=1.0">
+    <title> calculadora IMC</title>
+</head>
+<body>
+    <script>
+        function pulalinha(){
+            document.write ('<br><br>')
+        }
+
+        function mostra(texto){
+            document.write(texto)
+            pulalinha()
+        }
+        function calcularIMC(peso, altura){
+            return imc = peso/(altura*altura)
+            
+        }
+         
+        let imcBianca = calcularIMC (61, 1,61)
+
+        mostra('o IMC de Bianca é:'+ imcBianca)
+        
+    </script>
+</body>
