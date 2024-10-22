@@ -16,14 +16,31 @@
             document.write(texto)
             pulalinha()
         }
+
         function calcularIMC(peso, altura){
             return imc = peso/(altura*altura)
             
         }
          
-        let imcBianca = calcularIMC (61, 1,61)
+        let nome= prompt('Qual é seu nome?')
+        let alturaInformada= prompt (`${nome}, qual é sua altura?`)
+        let pesoInformado= prompt (`${nome}, qual é seu peso?`)
 
-        mostra('o IMC de Bianca é:'+ imcBianca)
+        let imcCalculado= calcularIMC(pesoInformado, alturaInformada)
         
+        if(imcCalculado > 25){
+          mostra(`${nome}, o seu IMC está acima do ideal`)
+        } else if (imCalculado < 18){
+            mostra(`${nome}, o seu IMC esta abaixo do ideal`)
+        }else {
+            mostra(`${nome}, o seu IMC esta ideal`)
+        }
+        let anoInicial = 1896
+
+        while(ano inicial <= 2024){
+            mostra(`${anoInicial}teve as olimpiadas`)
+            anoinicial = anoInicial = 4
+        }
+
     </script>
 </body>
