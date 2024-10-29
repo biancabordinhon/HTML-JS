@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="Utf-8">
-    <meta http-equiv="X-UA-Compatible" content="width=decive-width,initial-scale=1.0">
-    <meta name="viewport" content="width=decive-width,initial-scale=1.0">
-    <title> Pontuação de time</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa I</title>
 </head>
 <body>
-        <script>
-        function pulalinha(){
+    <script>
+
+        function pulaLinha(){
             document.write('<br><br>')
         }
 
-        function mostra(texto) {
+        function mostra(texto){
             document.write(texto)
-            pulalinha()
+            pulaLinha()
         }
-        
-        mostra(' numero de pontos do meu time no brasileirão, serie a')
 
-        let nometime= prompt (' qual é o nome do seu time?')
-        let vitorias = prompt('quantas vitorias o seu time obteve durante o campeonato?')
-        let empates = prompt('quantos empates o seu time teve?')
-        let derrotas = prompt (' quantas derrotas o seu time teve?')
+        let ano = 2024
+        let minhaIdade = ano - 2009
+        let idadeProfessor = ano - 1992
 
-        let Pontuação = parseInt(vitorias * 3) + parseInt(empates)
+        mostra('Meu nome é Botelho, e minha idade é: ' + minhaIdade)
+        mostra('O nome do meu professor e Teotonio, a idade dele e: ' + idadeProfessor )
 
-        mostra(`o ${nome time} obteve um total de ${pontuação} pontos`)
+        let media =  (idadeProfessor - minhaIdade)/2
+        mostra('A media das idades é: ' + media)
 
+        ano = 2030
 
-        if(pontuação > 80 ){
-            mostra('parabens, seu time passou para a serie A do brasileirão')
-        } else if(pontuação < 20){
-            mostra('infelizmente seu time foi rebaixado')
-        } else {
-            mostras('seu time continua na serie A')
-        }
-         </script>
+        mostra('No ano de ' + ano)
+        mostra('Minha idade será ' + (ano - minhaIdade))
+        mostra('O professor terá ' + (ano - idadeProfessor))
+    </script>
 </body>
+</html>
